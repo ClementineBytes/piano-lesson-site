@@ -1,0 +1,28 @@
+<!-- Section A -->
+<section id="section-a">
+  <div fxLayout="row">
+    <div fxFlex="100%">
+      <mat-card style="height: 100%">
+        <img mat-card-image style="width:fit-content" src="../assets/home-header.png">
+      </mat-card>
+    </div>
+  </div>
+</section>
+
+
+<!-- Section B -->
+<section id="section-b">
+    <div class="container" style="margin-top: 25px; margin-bottom: 150px;">
+      <div fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div *ngFor="let card of cards" fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="50%">
+          <mat-card style="height: 100%">
+            <mat-card-header>
+              <mat-card-title>{{card.title}}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image style="max-width: 100px;" src={{card.imagePath}}>
+            <mat-card-content>{{card.content}}</mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+  </div>
+</section>

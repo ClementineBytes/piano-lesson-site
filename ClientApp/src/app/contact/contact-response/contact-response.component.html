@@ -1,0 +1,14 @@
+<div *ngIf="!isLoading; else loading">
+  <h1 mat-dialog-title>Thanks {{data.name}}!</h1>
+  <div mat-dialog-content>
+    <p>Ryan will get back to you as soon as possible.</p>
+  </div>
+  <div mat-dialog-actions style="justify-content: center;">
+    <button mat-raised-button (click)="onOkClick()" cdkFocusInitial>Ok</button>
+  </div>
+</div>
+<ng-template #loading>
+  <div class="progress-spinner">
+    <mat-progress-spinner mode="indeterminate" style="margin: 0 auto;"></mat-progress-spinner>
+  </div>
+</ng-template>

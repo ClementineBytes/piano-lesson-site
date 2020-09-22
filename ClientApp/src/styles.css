@@ -1,0 +1,35 @@
+/* Global Styles */
+
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  text-align: center;
+}
+
+.grid-container {
+  margin: 20px;
+  margin-bottom: 150px;
+  display: grid;
+  row-gap: 15px;
+  align-content: center;
+}
+
+.mat-display-3,
+.mat-display-1 {
+  margin-bottom: 20px;
+}
+
+.mat-body {
+  line-height: 1.5; 
+  font-size: larger;
+}
+
+
+.mat-card-content {
+  font-size: large;
+}
+
+.mat-card-header-text {
+  width: 100%;
+}
+
